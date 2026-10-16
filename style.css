@@ -1,0 +1,318 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #1c2430;
+  line-height: 1.6;
+  font-size: 17px;
+}
+
+.centro {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.topo {
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.topo .centro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+}
+
+.marca {
+  font-size: 26px;
+  font-weight: bold;
+  color: #4f5f7a;
+}
+
+.marca b {
+  color: #4e8df5;
+}
+
+.hero {
+  background: linear-gradient(135deg, #f6f5fd, #e3eefc);
+  padding: 60px 0;
+}
+
+.hero-grade {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-texto {
+  flex: 1.2;
+}
+
+.selo {
+  display: inline-block;
+  background: #fff4d6;
+  color: #8a6100;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  line-height: 1.15;
+  margin-bottom: 16px;
+}
+
+.hero h1 span {
+  color: #7157c7;
+}
+
+.destaque {
+  font-size: 19px;
+  color: #4f5f7a;
+  margin-bottom: 24px;
+}
+
+.botao,
+button {
+  display: inline-block;
+  background: #7157c7;
+  color: white;
+  text-decoration: none;
+  border: none;
+  padding: 15px 32px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(113, 87, 199, 0.35);
+}
+
+.botao:hover,
+button:hover {
+  background: #5a44a8;
+}
+
+.mensagem {
+  margin-top: 14px;
+  font-weight: bold;
+  color: #7157c7;
+}
+
+.mini {
+  margin-top: 16px;
+  font-size: 14px;
+  color: #4f5f7a;
+}
+
+.hero-celular {
+  flex: 1;
+  text-align: center;
+}
+
+.celular {
+  background: white;
+  width: 270px;
+  margin: 0 auto;
+  padding: 24px 18px;
+  border: 8px solid #1c2430;
+  border-radius: 34px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+.cel-titulo {
+  font-weight: bold;
+  color: #4f5f7a;
+  margin-bottom: 10px;
+}
+
+.cel-cartao {
+  background: #f6f5fd;
+  border-radius: 14px;
+  padding: 16px;
+  margin-bottom: 14px;
+  font-size: 15px;
+}
+
+.cel-hora {
+  font-size: 30px;
+  font-weight: bold;
+  color: #7157c7;
+}
+
+.cel-botao {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  padding: 14px 8px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.verde-botao {
+  background: #39a86e;
+  cursor: pointer;
+}
+
+.verde-botao.confirmado {
+  background: #2b7d52;
+}
+
+.azul-botao {
+  background: #4e8df5;
+}
+
+.secao {
+  padding: 70px 0;
+  text-align: center;
+}
+
+.secao h2 {
+  font-size: 32px;
+  color: #4f5f7a;
+  margin-bottom: 10px;
+}
+
+.sub {
+  color: #788596;
+  margin-bottom: 36px;
+}
+
+.secao h2 + .grade,
+.secao h2 + .publico {
+  margin-top: 36px;
+}
+
+.fundo-roxo {
+  background: #f6f5fd;
+}
+
+.fundo-verde {
+  background: #e3f4ea;
+}
+
+.grade {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  justify-content: center;
+}
+
+.cartao,
+.passo,
+.beneficio {
+  flex: 1;
+  min-width: 220px;
+  background: #fdf0f0;
+  border-radius: 16px;
+  padding: 28px 22px;
+}
+
+.cartao:hover,
+.beneficio:hover {
+  transform: translateY(-4px);
+}
+
+.cartao h3 {
+  margin-bottom: 8px;
+  font-size: 19px;
+}
+
+.cartao.branco {
+  background: white;
+  box-shadow: 0 4px 14px rgba(113, 87, 199, 0.12);
+}
+
+.grade4 .cartao {
+  min-width: 200px;
+}
+
+.emoji {
+  font-size: 38px;
+  margin-bottom: 6px;
+}
+
+.passo {
+  background: white;
+  border: 2px solid #dde1e8;
+}
+
+.passo span {
+  display: inline-block;
+  width: 52px;
+  height: 52px;
+  line-height: 52px;
+  border-radius: 50%;
+  background: #4e8df5;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.beneficio {
+  background: white;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.beneficio h3 {
+  color: #2b7d52;
+  margin-bottom: 6px;
+}
+
+.publico {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+}
+
+.publico span {
+  background: #f6f5fd;
+  border: 2px solid #7157c7;
+  color: #7157c7;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+footer {
+  background: #1c2430;
+  color: #cfd8e6;
+  text-align: center;
+  padding: 28px 20px;
+  font-size: 14px;
+}
+
+@media (max-width: 800px) {
+  .hero-grade {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .secao h2 {
+    font-size: 26px;
+  }
+}
