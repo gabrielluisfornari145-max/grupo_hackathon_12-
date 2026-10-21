@@ -37,9 +37,18 @@ body {
 }
 
 .marca {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-size: 26px;
   font-weight: bold;
   color: #4f5f7a;
+  text-decoration: none;
+}
+
+.marca img {
+  height: 46px;
+  width: 46px;
 }
 
 .marca b {
@@ -59,17 +68,6 @@ body {
 
 .hero-texto {
   flex: 1.2;
-}
-
-.selo {
-  display: inline-block;
-  background: #fff4d6;
-  color: #8a6100;
-  padding: 6px 14px;
-  border-radius: 20px;
-  font-size: 14px;
-  font-weight: bold;
-  margin-bottom: 16px;
 }
 
 .hero h1 {
@@ -302,6 +300,81 @@ footer {
   font-size: 14px;
 }
 
+.menu {
+  display: flex;
+  gap: 22px;
+}
+
+.menu a {
+  color: #4f5f7a;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.menu a:hover {
+  color: #7157c7;
+}
+
+.hero-logo {
+  display: block;
+  width: 210px;
+  margin-bottom: 10px;
+}
+
+.hero-botoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.botao-claro {
+  background: white;
+  color: #7157c7;
+  border: 2px solid #7157c7;
+  padding: 13px 28px;
+  box-shadow: none;
+}
+
+.botao-claro:hover {
+  background: #f6f5fd;
+}
+
+#idoso,
+#familia,
+#inicio {
+  scroll-margin-top: 70px;
+}
+
+.etiqueta {
+  display: inline-block;
+  background: white;
+  color: #7157c7;
+  border: 2px solid #7157c7;
+  padding: 6px 18px;
+  border-radius: 20px;
+  font-weight: bold;
+  margin-bottom: 14px;
+}
+
+.passos-idoso {
+  margin-top: 50px;
+}
+
+.passos-idoso > h3 {
+  font-size: 24px;
+  color: #4f5f7a;
+  margin-bottom: 22px;
+}
+
+.titulo-solucao {
+  margin-top: 60px;
+}
+
+.chamada {
+  margin-top: 40px;
+}
+
 @media (max-width: 800px) {
   .hero-grade {
     flex-direction: column;
@@ -314,5 +387,24 @@ footer {
 
   .secao h2 {
     font-size: 26px;
+  }
+
+  .hero-botoes {
+    justify-content: center;
+  }
+
+  .hero-logo {
+    margin: 0 auto 10px auto;
+  }
+
+  .topo .centro {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  #idoso,
+  #familia,
+  #inicio {
+    scroll-margin-top: 110px;
   }
 }

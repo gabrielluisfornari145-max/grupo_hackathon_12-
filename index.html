@@ -11,21 +11,30 @@
 
   <header class="topo">
     <div class="centro">
-      <span class="marca">Cuidar<b>+</b></span>
+      <a class="marca" href="#inicio">
+        <img src="favicon.png" alt="Logo do Cuidar+">
+        <span>Cuidar<b>+</b></span>
+      </a>
+      <nav class="menu">
+        <a href="#idoso">Para o idoso</a>
+        <a href="#familia">Para quem vai comprar</a>
+      </nav>
     </div>
   </header>
 
-  <section class="hero">
+  <section class="hero" id="inicio">
     <div class="centro hero-grade">
       <div class="hero-texto">
-        <p class="selo">🏆 Campeão do 2º Hackathon IFC Concórdia</p>
+        <img class="hero-logo" src="logo.png" alt="Cuidar+ - Mais cuidado, sempre.">
         <h1>Você não precisa estar perto para <span>cuidar bem</span>.</h1>
         <p class="destaque">
           O Cuidar+ lembra seu familiar idoso de cada remédio e cada consulta,
           e avisa você quando algo sai do combinado.
         </p>
-        <button id="botao-interesse">Quero o Cuidar+</button>
-        <p class="mensagem" id="mensagem"></p>
+        <div class="hero-botoes">
+          <a class="botao" href="#idoso">Sou idoso</a>
+          <a class="botao botao-claro" href="#familia">Vou comprar para um familiar</a>
+        </div>
         <p class="mini">✔ Fácil para o idoso &nbsp; ✔ Tranquilidade para a família</p>
       </div>
 
@@ -44,8 +53,59 @@
     </div>
   </section>
 
-  <section class="secao">
+  <section class="secao fundo-roxo" id="idoso">
     <div class="centro">
+      <p class="etiqueta">👵 Para o idoso</p>
+      <h2>Simples, grande e fácil de usar</h2>
+      <p class="sub">Feito para quem quer cuidar da saúde sem complicação.</p>
+      <div class="grade grade4">
+        <div class="cartao branco">
+          <p class="emoji">⏰</p>
+          <h3>Lembretes na hora certa</h3>
+          <p>Remédio, consulta, refeição e atividade, com alarme ou notificação.</p>
+        </div>
+        <div class="cartao branco">
+          <p class="emoji">🔎</p>
+          <h3>Letras grandes</h3>
+          <p>Tamanho da letra, brilho e alto contraste para ler sem esforço.</p>
+        </div>
+        <div class="cartao branco">
+          <p class="emoji">📷</p>
+          <h3>Foto e voz da família</h3>
+          <p>Uma foto do remédio e a voz de quem você ama deixam o aviso mais fácil e mais carinhoso.</p>
+        </div>
+        <div class="cartao branco">
+          <p class="emoji">📞</p>
+          <h3>Ligar com um toque</h3>
+          <p>Precisou de ajuda? Um botão grande chama a família na hora.</p>
+        </div>
+      </div>
+      <div class="passos-idoso">
+        <h3>Como o idoso usa</h3>
+        <div class="grade">
+          <div class="passo">
+            <span>1</span>
+            <h3>Recebe o aviso</h3>
+            <p>O celular toca na hora do remédio ou da consulta.</p>
+          </div>
+          <div class="passo">
+            <span>2</span>
+            <h3>Toca no botão</h3>
+            <p>Um botão verde grande confirma que deu tudo certo.</p>
+          </div>
+          <div class="passo">
+            <span>3</span>
+            <h3>Se sentir independente</h3>
+            <p>Ele usa sozinho e a família acompanha de longe.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="secao" id="familia">
+    <div class="centro">
+      <p class="etiqueta">👨‍👩‍👧 Para quem vai comprar</p>
       <h2>Sabe aquela preocupação de todo dia?</h2>
       <p class="sub">Quem cuida de um idoso conhece bem estas situações.</p>
       <div class="grade">
@@ -65,39 +125,36 @@
           <p>Sem saber das atividades da cidade, ele acaba isolado.</p>
         </div>
       </div>
-    </div>
-  </section>
 
-  <section class="secao fundo-roxo">
-    <div class="centro">
-      <h2>O Cuidar+ resolve isso</h2>
+      <h2 class="titulo-solucao">O Cuidar+ resolve isso</h2>
       <p class="sub">Tudo o que a família precisa, em um app simples.</p>
-      <div class="grade grade4">
-        <div class="cartao branco">
-          <p class="emoji">⏰</p>
-          <h3>Lembretes na hora certa</h3>
-          <p>Remédio, consulta, refeição e atividade, com alarme ou notificação.</p>
+      <div class="grade">
+        <div class="beneficio">
+          <h3>⏱️ Programe de qualquer lugar</h3>
+          <p>Você cria os lembretes pelo seu celular, mesmo de longe.</p>
         </div>
-        <div class="cartao branco">
-          <p class="emoji">📷</p>
-          <h3>Foto e voz da família</h3>
-          <p>Uma foto do remédio e a sua voz deixam o aviso mais fácil e mais carinhoso.</p>
-        </div>
-        <div class="cartao branco">
-          <p class="emoji">🔔</p>
-          <h3>Alertas para você</h3>
+        <div class="beneficio">
+          <h3>🔔 Alertas para você</h3>
           <p>Adiou ou perdeu um lembrete? A família fica sabendo na hora.</p>
         </div>
-        <div class="cartao branco">
-          <p class="emoji">🔎</p>
-          <h3>Letras grandes</h3>
-          <p>Tamanho da letra, brilho e alto contraste para ler sem esforço.</p>
+        <div class="beneficio">
+          <h3>😌 Mais tranquilidade</h3>
+          <p>Acompanhe de longe, sem ficar ligando toda hora.</p>
         </div>
+        <div class="beneficio">
+          <h3>❤️ Mais saúde</h3>
+          <p>Menos remédios esquecidos e consultas perdidas.</p>
+        </div>
+      </div>
+
+      <div class="chamada">
+        <button id="botao-interesse">Quero o Cuidar+</button>
+        <p class="mensagem" id="mensagem"></p>
       </div>
     </div>
   </section>
 
-  <section class="secao">
+  <section class="secao fundo-verde">
     <div class="centro">
       <h2>Como funciona</h2>
       <div class="grade">
@@ -116,38 +173,6 @@
           <h3>Fique tranquilo</h3>
           <p>O app avisa o idoso e conta para você como foi.</p>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="secao fundo-verde">
-    <div class="centro">
-      <h2>Por que escolher o Cuidar+?</h2>
-      <div class="grade">
-        <div class="beneficio">
-          <h3>❤️ Mais saúde</h3>
-          <p>Menos remédios esquecidos e consultas perdidas.</p>
-        </div>
-        <div class="beneficio">
-          <h3>😌 Mais tranquilidade</h3>
-          <p>Acompanhe de longe, sem ficar ligando toda hora.</p>
-        </div>
-        <div class="beneficio">
-          <h3>🙂 Mais autonomia</h3>
-          <p>O idoso usa sozinho e se sente independente.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="secao">
-    <div class="centro">
-      <h2>Feito para quem cuida e para quem é cuidado</h2>
-      <div class="publico">
-        <span>👵 Idosos</span>
-        <span>👨‍👩‍👧 Familiares</span>
-        <span>🧑‍⚕️ Cuidadores</span>
-        <span>🏛️ Instituições</span>
       </div>
     </div>
   </section>
