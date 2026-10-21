@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cuidar+ | Mais cuidado, sempre.</title>
+<link rel="icon" href="favicon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topo"><div class="centro">
+<a class="marca" href="#inicio"><img src="logo.png" alt="Logo Cuidar+">Cuidar<b>+</b></a>
+<nav><a class="menu" href="#demo">Teste o app</a><a class="menu" href="#planos">Planos</a><a class="botao" style="padding:10px 20px;font-size:15px" href="#contato">Tenho interesse</a></nav>
+</div></header>
+
+<section class="hero" id="inicio"><div class="centro">
+<div class="texto">
+<h1>Cuidar de longe também é <span>estar presente</span></h1>
+<p>O Cuidar+ lembra seu familiar dos remédios, consultas e atividades, e avisa você quando ele confirma. Simples para o idoso, tranquilo para a família.</p>
+<div class="botoes"><a class="botao" href="#demo">Experimente agora</a><a class="botao claro" href="#planos">Ver planos</a></div>
+</div>
+<img src="imagens/idosos-coracao.png" alt="Idosa e neta abraçadas dentro de um coração">
+</div></section>
+
+<section><div class="centro revelar">
+<h2>O problema é maior que a solidão</h2>
+<p class="sub">Perguntamos a familiares e cuidadores como eles acompanham os idosos hoje. Clique nas fatias.</p>
+<div class="abas"><button class="aba-grafico ativa" data-grafico="frequencia">Com que frequência vê o idoso?</button><button class="aba-grafico" data-grafico="forma">Como acompanha hoje?</button></div>
+<div class="grafico">
+<div class="rosca"><svg viewBox="0 0 42 42" id="rosca"></svg><div class="centro-rosca"><strong id="roscaNumero"></strong><span id="roscaTexto"></span></div></div>
+<div id="legenda"></div>
+</div>
+<p class="destaque" id="destaqueGrafico"></p>
+</div></section>
+
+<section class="fundo"><div class="centro revelar">
+<h2>Feito para os dois lados</h2>
+<p class="sub">Escolha quem você é e veja o que o Cuidar+ faz por você.</p>
+<div class="abas"><button class="aba ativa" data-painel="paraIdoso">👵 Para o idoso</button><button class="aba" data-painel="paraFamilia">👩 Para quem vai cuidar</button></div>
+<div class="painel ativo" id="paraIdoso">
+<div class="cartao"><i>🔔</i><h3>Lembretes claros</h3><p>Aviso com alarme, foto ou mensagem de voz do familiar.</p></div>
+<div class="cartao"><i>🔠</i><h3>Letras grandes</h3><p>Ajuste o tamanho do texto do jeito que ficar mais fácil de ler.</p></div>
+<div class="cartao"><i>✅</i><h3>Um toque só</h3><p>Basta apertar "Já fiz" depois de tomar o remédio.</p></div>
+<div class="cartao"><i>🤝</i><h3>Mais autonomia</h3><p>Ele cuida da própria rotina e continua perto da família.</p></div>
+</div>
+<div class="painel" id="paraFamilia">
+<div class="cartao"><i>💊</i><h3>Cadastro fácil</h3><p>Adicione remédios, consultas e atividades em poucos toques.</p></div>
+<div class="cartao"><i>👀</i><h3>Acompanhe de longe</h3><p>Veja o que já foi feito e o que está pendente.</p></div>
+<div class="cartao"><i>🚨</i><h3>Alerta se esquecer</h3><p>Sem confirmação, o app avisa você para verificar se está tudo bem.</p></div>
+<div class="cartao"><i>😌</i><h3>Mais tranquilidade</h3><p>Menos esquecimentos e menos preocupação no seu dia.</p></div>
+</div>
+</div></section>
+
+<section><div class="centro revelar">
+<h2>Como funciona na prática</h2>
+<p class="sub">Acompanhe a Dona Maria e escolha o que acontece.</p>
+<div class="historia">
+<div class="trilha" id="trilha"><span>1 Cadastra</span><span>2 Lembrete</span><span>3 Confirma</span><span>4 Acompanha</span><span>5 Sem resposta</span></div>
+<div class="conversa" id="conversa"></div>
+<div class="acoes" id="acoesHistoria"></div>
+</div>
+</div></section>
+
+<section><div class="centro revelar">
+<h2>Conheça o app por dentro</h2>
+<p class="sub">Telas reais do Cuidar+. Clique em uma para ver maior.</p>
+<div class="galeria">
+<figure><img src="imagens/app-1.png" alt="Tela inicial da família"><figcaption>Família acompanha a rotina</figcaption></figure>
+<figure><img src="imagens/app-2.png" alt="Tela de novo lembrete"><figcaption>Novo lembrete</figcaption></figure>
+<figure><img src="imagens/app-3.png" alt="Tela inicial do idoso"><figcaption>Tela do idoso</figcaption></figure>
+<figure><img src="imagens/app-4.png" alt="Tela Está na hora"><figcaption>Está na hora!</figcaption></figure>
+<figure><img src="imagens/app-5.png" alt="Tela Meus compromissos"><figcaption>Meus compromissos</figcaption></figure>
+</div>
+</div></section>
+<div class="ampliada" id="ampliada"><img id="imagemAmpliada" alt=""></div>
+
+<section class="fundo" id="demo"><div class="centro revelar">
+<h2>Teste o Cuidar+ agora</h2>
+<p class="sub">Cadastre um lembrete no celular da família e veja ele chegar no celular do idoso.</p>
+<div class="demo">
+<div class="celular">
+<h4>👩 Celular da família</h4>
+<label for="tituloLembrete">Lembrete</label>
+<input id="tituloLembrete" placeholder="Ex.: Tomar Dipirona">
+<label for="horaLembrete">Horário</label>
+<input id="horaLembrete" type="time" value="08:00">
+<label for="tipoLembrete">Tipo</label>
+<select id="tipoLembrete"><option>💊 Remédio</option><option>🩺 Consulta</option><option>🚶 Atividade</option><option>🍽️ Refeição</option></select>
+<button class="botao" id="botaoAdicionar">+ Adicionar lembrete</button>
+<div class="alerta" id="avisoFamilia">Tudo bem por aqui. Nenhum lembrete atrasado.</div>
+</div>
+<div class="celular" id="celularIdoso">
+<h4>👵 Celular do idoso</h4>
+<div class="tamanho"><span>Texto</span><input type="range" id="tamanhoTexto" min="14" max="24" value="16"></div>
+<ul id="listaIdoso"></ul>
+</div>
+</div>
+</div></section>
+
+<section id="planos"><div class="centro revelar">
+<h2>Escolha seu plano</h2>
+<p class="sub">Clique em um plano e simule quanto fica.</p>
+<div class="planos">
+<div class="plano escolhido" data-nome="Padrão" data-preco="24.90"><h3>Padrão</h3><strong>R$ 24,90</strong>por mês<p>Ideal para começar a cuidar</p></div>
+<div class="plano" data-nome="Família" data-preco="39.90"><h3>Família</h3><strong>R$ 39,90</strong>por mês<p>Para a família toda acompanhar</p></div>
+<div class="plano" data-nome="Premium" data-preco="59.90"><h3>Premium</h3><strong>R$ 59,90</strong>por mês<p>O cuidado mais completo</p></div>
+</div>
+<div class="calculo">
+<p>Plano <b id="nomePlano">Padrão</b> por <b id="mesesTexto">6</b> meses</p>
+<input type="range" id="meses" min="1" max="12" value="6">
+<div class="total" id="totalPlano"></div>
+<a class="botao" id="botaoPlano" href="#contato" style="margin-top:14px">Quero este plano</a>
+</div>
+</div></section>
+
+<section class="fundo" id="contato"><div class="centro revelar">
+<h2>Fale com a gente</h2>
+<p class="sub">Conte o que você procura e a equipe responde por e-mail.</p>
+<form class="contato" id="formulario">
+<label>Você quer o Cuidar+ para quem?</label>
+<div class="escolha"><label><input type="radio" name="perfil" value="Para o idoso" checked>Para o idoso</label><label><input type="radio" name="perfil" value="Para quem vai comprar">Para quem vai comprar</label></div>
+<label for="nome">Seu nome</label><input id="nome" required>
+<label for="emailContato">Seu e-mail</label><input id="emailContato" type="email" required>
+<label for="planoContato">Plano de interesse</label>
+<select id="planoContato"><option>Padrão</option><option>Família</option><option>Premium</option><option>Ainda não sei</option></select>
+<label for="mensagem">Mensagem</label><textarea id="mensagem" rows="4"></textarea>
+<button class="botao" type="submit">Enviar por e-mail</button>
+<p id="resposta"></p>
+</form>
+</div></section>
+
+<section><div class="centro revelar">
+<h2>Dúvidas frequentes</h2>
+<p class="sub">Busque pela sua dúvida ou escolha um assunto.</p>
+<div class="busca"><input id="buscaDuvida" placeholder="🔎 Digite sua dúvida..."></div>
+<div class="chips" id="chipsDuvida"><button class="ativa">Todas</button><button>Idoso</button><button>Família</button><button>Planos</button></div>
+<div id="listaDuvidas"></div>
+<p id="semResultado" class="sem-resultado">Não achamos essa dúvida. <a href="#contato">Pergunte para a gente</a>.</p>
+</div></section>
+
+<footer>Cuidar+ · Mais cuidado, sempre. · Grupo 12 · 2º Hackathon IFC Concórdia</footer>
+<script src="script.js"></script>
+</body>
+</html>
